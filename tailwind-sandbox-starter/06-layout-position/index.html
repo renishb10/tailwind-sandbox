@@ -9,28 +9,72 @@
   </head>
   <body>
     <!-- Positioning -->
+    <div class="relative h-12 bg-red-200 w-1/2">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Absolute</p>
+      </div>
+    </div>
 
     <!-- Top left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Top right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Bottom left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span top edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-x-0 h-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Span left edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-y-0 w-16 bg-yellow-300 left-0"></div>
+    </div>
 
     <!-- Span right edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-y-0 w-16 bg-yellow-300 right-0"></div>
+    </div>
 
     <!-- Span bottom edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-x-0 h-16 bottom-0 bg-yellow-300"></div>
+    </div>
 
     <!-- Display Classes -->
+    <div>
+      Lorem ipsum dolor sit amet <span class="inline font-bold">consectetur</span> adipisicing elit. Deserunt aliquid at, dolores nesciunt, quidem obcaecati placeat <span class="block font-bold">consectetur</span> iste tempora exercitationem quisquam ducimus explicabo. Nihil, <span class="hidden font-bold">consectetur</span> esse ratione eum fuga consectetur quia praesentium?
+    </div>
 
     <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute w-24 h-24 bg-red-300 z-40 left-10">1</div>
+      <div class="absolute w-24 h-24 bg-red-400 z-10 left-20">2</div>
+      <div class="absolute w-24 h-24 bg-red-500 z-10 left-40">3</div>
+      <div class="absolute w-24 h-24 bg-red-600 z-50 left-60">4</div>
+      <div class="absolute w-24 h-24 bg-red-700 z-10 left-80">5</div>
+    </div>
 
     <!-- Floats -->
+    <div>
+      <img src="../assets/img/img1.jpg" alt="" srcset="" class="h-48 w-48 float-left">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim inventore atque, cum possimus unde ipsa voluptatum sit minus animi, omnis, error tenetur. Assumenda distinctio consequuntur similique sint vitae repellendus!</p>
+    </div>
   </body>
 </html>
 
